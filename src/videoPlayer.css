@@ -1,0 +1,63 @@
+.video-container {
+  position: relative;
+  width: 100%;
+}
+
+video {
+  width: 100%;
+}
+
+.overlay-text {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  top: 55%;
+  left: 50%;
+  padding-left: 5rem;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  opacity: 0; /* Start with hidden text */
+  transition: opacity 0.5s; /* Smooth transition for fade-in */
+  h2 {
+    width: 900px;
+    margin-bottom: 0;
+  }
+  h1 {
+    color: rgb(103, 7, 215);
+    font-size: 60px;
+    font-weight: 500px;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .overlay-text {
+    padding-left: 0;
+    h2 {
+      font-size: 16px;
+      padding-left: 30%;
+    }
+    h1 {
+      font-size: 18px;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .overlay-text {
+    top: 55%;
+    left: 50%;
+    text-align: center;
+    justify-content: center;
+    padding-left: 0;
+    h2 {
+      width: 600px;
+      font-size: 30px;
+    }
+    h1 {
+      font-size: 35px;
+    }
+  }
+}

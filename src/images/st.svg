@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 45.58 38.27">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#New_Gradient_Swatch_12-8);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: url(#New_Gradient_Swatch_12-7);
+      }
+
+      .cls-3 {
+        fill: url(#New_Gradient_Swatch_12-4);
+      }
+
+      .cls-4 {
+        fill: url(#New_Gradient_Swatch_12-5);
+      }
+
+      .cls-5 {
+        fill: url(#New_Gradient_Swatch_12-6);
+      }
+
+      .cls-6 {
+        fill: url(#New_Gradient_Swatch_12-2);
+      }
+
+      .cls-7 {
+        fill: url(#New_Gradient_Swatch_12-3);
+      }
+
+      .cls-8 {
+        fill: url(#New_Gradient_Swatch_12);
+      }
+    </style>
+    <linearGradient id="New_Gradient_Swatch_12" data-name="New Gradient Swatch 12" x1="32.6" y1="-1.71" x2="0" y2="30.9" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#56bbf6"/>
+      <stop offset="1" stop-color="#5434dc"/>
+    </linearGradient>
+    <linearGradient id="New_Gradient_Swatch_12-2" data-name="New Gradient Swatch 12" x1="34.85" y1=".53" x2="2.23" y2="33.14" xlink:href="#New_Gradient_Swatch_12"/>
+    <linearGradient id="New_Gradient_Swatch_12-3" data-name="New Gradient Swatch 12" x1="36.22" y1="1.91" x2="3.61" y2="34.52" xlink:href="#New_Gradient_Swatch_12"/>
+    <linearGradient id="New_Gradient_Swatch_12-4" data-name="New Gradient Swatch 12" x1="39.2" y1="4.88" x2="6.59" y2="37.49" xlink:href="#New_Gradient_Swatch_12"/>
+    <linearGradient id="New_Gradient_Swatch_12-5" data-name="New Gradient Swatch 12" x1="45.01" y1="10.69" x2="12.4" y2="43.3" xlink:href="#New_Gradient_Swatch_12"/>
+    <linearGradient id="New_Gradient_Swatch_12-6" data-name="New Gradient Swatch 12" x1="46.38" y1="12.07" x2="13.77" y2="44.68" xlink:href="#New_Gradient_Swatch_12"/>
+    <linearGradient id="New_Gradient_Swatch_12-7" data-name="New Gradient Swatch 12" x1="49.36" y1="15.04" x2="16.75" y2="47.65" xlink:href="#New_Gradient_Swatch_12"/>
+    <linearGradient id="New_Gradient_Swatch_12-8" data-name="New Gradient Swatch 12" x1="42.19" y1="7.87" x2="9.58" y2="40.48" xlink:href="#New_Gradient_Swatch_12"/>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <polygon class="cls-8" points="27.77 5.99 20.87 12.88 17.54 9.55 17.08 10.02 20.87 13.81 28.23 6.45 27.77 5.99"/>
+      <rect class="cls-6" x="7.99" y="23.42" width=".66" height="7.27"/>
+      <rect class="cls-7" x="12.1" y="20.7" width=".66" height="9.98"/>
+      <rect class="cls-3" x="16.21" y="24.39" width=".66" height="6.3"/>
+      <rect class="cls-4" x="28.32" y="23.42" width=".66" height="7.27"/>
+      <rect class="cls-5" x="32.42" y="20.7" width=".66" height="9.98"/>
+      <rect class="cls-2" x="36.53" y="24.39" width=".66" height="6.3"/>
+      <path class="cls-1" d="M41.54,33.48V15.42c0-1.37-1.11-2.48-2.48-2.48h-5.61v.66h5.61c1,0,1.82.82,1.82,1.82v18.06h-15.77v-9.05l-2.05-2.05v-3.26c5.12-.18,9.24-4.39,9.24-9.55S28.01,0,22.73,0s-9.57,4.29-9.57,9.57,4.12,9.38,9.24,9.55v3.26l-2.05,2.05v9.05H4.58V15.42c0-1,.82-1.82,1.82-1.82h4.11v-.66h-4.11c-1.37,0-2.48,1.11-2.48,2.48v18.06H0v1.3c0,1.92,1.56,3.49,3.49,3.49h38.6c1.92,0,3.49-1.56,3.49-3.49v-1.3h-4.04ZM13.82,9.57c0-4.91,4-8.91,8.91-8.91s8.91,4,8.91,8.91-4,8.91-8.91,8.91-8.91-4-8.91-8.91ZM21.01,24.7l1.72-1.73,1.72,1.73v8.77h-3.45v-8.77ZM44.92,34.78c0,1.56-1.27,2.83-2.83,2.83H3.49c-1.56,0-2.83-1.27-2.83-2.83v-.65h19.69s4.76,0,4.76,0h0s16.43,0,16.43,0h3.38v.65Z"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,86 @@
+.form {
+  margin: auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+}
+.label,
+input,
+textarea:focus {
+  outline: none;
+}
+.label,
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 17px;
+}
+.sendMessage {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.contactus {
+  width: clamp(300px, 50%, 1200px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 7%;
+}
+.formContent {
+  margin: 20px;
+  font-size: 20px;
+  color: white;
+  input {
+    margin-top: 10px;
+  }
+}
+#contactForm {
+  width: 80%;
+  padding-bottom: 40px;
+  border-radius: 20px;
+  padding-top: 10px;
+  background-image: var(--complex-gradient);
+}
+
+@media (max-width: 768px) {
+  .form {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+  }
+  .label,
+  input,
+  textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 12px;
+  }
+  .contactus {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 5%;
+  }
+  .formContent {
+    margin: 10px;
+    font-size: 12px;
+    input {
+      margin-top: 5px;
+    }
+  }
+  .sendMessage button {
+    font-size: 10px;
+  }
+  #contactForm {
+    width: 90%;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    padding-top: 5px;
+  }
+}

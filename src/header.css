@@ -1,0 +1,2450 @@
+:root {
+  --primary-color: rgb(103, 7, 215);
+  --secondary-color: rgb(22, 176, 207);
+  --complex-gradient: radial-gradient(
+      circle at 67% 83%,
+      hsla(317, 0%, 96%, 0.05) 0%,
+      hsla(317, 0%, 96%, 0.05) 1%,
+      transparent 1%,
+      transparent 5%,
+      transparent 5%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 24% 80%,
+      hsla(317, 0%, 96%, 0.05) 0%,
+      hsla(317, 0%, 96%, 0.05) 27%,
+      transparent 27%,
+      transparent 63%,
+      transparent 63%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 23% 5%,
+      hsla(317, 0%, 96%, 0.05) 0%,
+      hsla(317, 0%, 96%, 0.05) 26%,
+      transparent 26%,
+      transparent 82%,
+      transparent 82%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 21% 11%,
+      hsla(317, 0%, 96%, 0.05) 0%,
+      hsla(317, 0%, 96%, 0.05) 35%,
+      transparent 35%,
+      transparent 45%,
+      transparent 45%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 10% 11%,
+      hsla(317, 0%, 96%, 0.05) 0%,
+      hsla(317, 0%, 96%, 0.05) 21%,
+      transparent 21%,
+      transparent 81%,
+      transparent 81%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 19% 61%,
+      hsla(317, 0%, 96%, 0.05) 0%,
+      hsla(317, 0%, 96%, 0.05) 20%,
+      transparent 20%,
+      transparent 61%,
+      transparent 61%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 13% 77%,
+      hsla(317, 0%, 96%, 0.05) 0%,
+      hsla(317, 0%, 96%, 0.05) 63%,
+      transparent 63%,
+      transparent 72%,
+      transparent 72%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 30% 93%,
+      hsla(317, 0%, 96%, 0.05) 0%,
+      hsla(317, 0%, 96%, 0.05) 33%,
+      transparent 33%,
+      transparent 82%,
+      transparent 82%,
+      transparent 100%
+    ),
+    linear-gradient(90deg, rgb(22, 176, 207), rgb(103, 7, 215));
+}
+
+.globalHealthCareContainer {
+  max-width: auto;
+  width: 100%;
+  height: 100%;
+  padding-top: 4rem;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+.navbar-container {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  width: 100%;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  max-width: auto;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  h1 {
+    color: var(--primary-color);
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+  }
+  img {
+    width: 8%;
+  }
+}
+
+.menu-toggle {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #444;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 7rem;
+  padding-top: 10px;
+  list-style: none;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-links li a {
+  color: #444;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  color: var(--primary-color);
+}
+.active-link {
+  font-weight: bold;
+}
+.btn {
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background-image: var(--complex-gradient);
+  cursor: pointer;
+}
+.landingPage {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+}
+.landingPageIntro {
+  width: 50%;
+  padding-top: 12rem;
+  padding-left: 7rem;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  h1 {
+    font-size: 45px;
+    font-weight: 400;
+    width: 630px;
+    margin-bottom: 2rem;
+    margin-top: 0;
+    z-index: 1;
+  }
+  h2 {
+    color: var(--primary-color);
+    font-size: normal;
+    font-weight: normal;
+    margin: 0;
+  }
+}
+.btn-lg:hover {
+  background-image: none;
+  color: #444;
+}
+.btn-lg {
+  padding: 1.2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-radius: 35px;
+  border: none;
+  color: white;
+  background-image: var(--complex-gradient);
+  cursor: pointer;
+  font-size: 17px;
+  gap: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgCover {
+  background: url("/public/image/hero-image.jpg");
+  width: 50%;
+  height: 92vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 0;
+}
+.imgCover img {
+  max-width: auto;
+  z-index: 50;
+  right: 50px;
+  width: 50%;
+  height: 70%;
+  top: 30%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+.imgCover:after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  display: block;
+  height: 100%;
+  transform: skew(-10deg) translateX(-300px);
+  transform-origin: bottom left;
+  width: 300px;
+  top: -1px;
+}
+.vision {
+  background: url("/public/image/global-map.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 92vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.visionContent {
+  margin-top: 10rem;
+  z-index: 1;
+  h1 {
+    font-size: 45px;
+    font-weight: 600;
+    width: 600px;
+    margin: 0;
+    color: white;
+  }
+  h2 {
+    color: var(--secondary-color);
+    font-size: normal;
+    font-weight: normal;
+  }
+}
+.empty {
+  width: 50%;
+}
+.vision:after {
+  content: "";
+  position: absolute;
+  background-color: #444;
+  opacity: 0.7;
+  display: block;
+  height: 92vh;
+  width: 100%;
+}
+.AnalyticalSuperpowers {
+  display: flex;
+  margin: 0px;
+  background: url("/public/image/hong-kong-photo.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.AnalyticalSuperpowers:after {
+  content: "";
+  position: absolute;
+  background-color: #444;
+  opacity: 0.7;
+  display: block;
+  height: 100vh;
+  width: 100%;
+}
+.AnalyticalSuperpowersIntro {
+  width: 50%;
+  padding-top: 11rem;
+  padding-left: 7rem;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  h1 {
+    font-size: 45px;
+    font-weight: 500;
+    width: 570px;
+    margin-bottom: 2rem;
+    margin-top: 0;
+    z-index: 1;
+    color: white;
+  }
+  h2 {
+    color: var(--secondary-color);
+    font-size: normal;
+    font-weight: normal;
+    margin: 0;
+    z-index: 1;
+  }
+}
+.AnalyticalContainer {
+  width: 70%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.AnalyticalSuperpowersModule {
+  width: 70%;
+  box-sizing: border-box;
+  height: 240px;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  img {
+    width: 100%;
+    height: 220px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+}
+
+.moderntechnology {
+  display: flex;
+}
+.moderntechnologyintro {
+  width: 50%;
+  padding-top: 11rem;
+  padding-left: 7rem;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  h1 {
+    font-size: 45px;
+    font-weight: 500;
+    width: 500px;
+    margin-top: 0;
+    z-index: 1;
+    color: #444;
+  }
+  h2 {
+    color: var(--primary-color);
+    font-size: normal;
+    font-weight: normal;
+    margin-bottom: 1rem;
+  }
+}
+.moderntechnologyimage {
+  background: url("/public/image/collaboration-photo.jpg");
+  width: 50%;
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+.supplychain {
+  display: flex;
+}
+.supplychainimage {
+  background: url("/public/image/group-photo.webp");
+  width: 50%;
+  height: 92vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+.supplychainintro {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-size: 45px;
+    font-weight: 500;
+    width: 400px;
+  }
+}
+.decision {
+  display: flex;
+  width: 100%;
+  height: 92vh;
+  background-image: var(--complex-gradient);
+}
+
+.decisionIntro {
+  width: 50%;
+  padding-top: 12rem;
+  padding-left: 7rem;
+  h1 {
+    font-size: 45px;
+    font-weight: 500;
+    width: 500px;
+    margin-bottom: 2rem;
+    margin-top: 0;
+    z-index: 1;
+    color: white;
+  }
+}
+.btn-n {
+  padding: 1.2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-radius: 35px;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+  transition: 0.5s ease;
+}
+.btn-n:hover {
+  background-color: #444;
+  color: white;
+}
+.decisionImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.earth {
+  width: 100%;
+}
+.riskAssessment {
+  display: flex;
+}
+.supplyRiskAssessment {
+  padding-left: 3rem;
+  padding-top: 3rem;
+  width: 60%;
+  z-index: 1;
+  h1 {
+    font-size: 40px;
+    font-weight: normal;
+    width: 550px;
+    margin-bottom: 2rem;
+    margin-top: 0;
+    z-index: 1;
+  }
+  p {
+    width: 500px;
+  }
+}
+.riskAssessmentImageContainer {
+  width: 40%;
+  height: 25em;
+  background: url("/public/image/secure-no-cost.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.riskAssessmentImageContainer:before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  display: block;
+  height: 25em;
+  transform: skew(-10deg) translateX(-300px);
+  transform-origin: bottom left;
+  width: 300px;
+}
+.riskAssessmentImage-1 {
+  height: 25em;
+}
+
+.riskAssessmentImage-2 {
+  height: 25em;
+}
+.solutionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
+  background-color: whitesmoke;
+}
+.solutions {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+  h1 {
+    font-size: 40px;
+    font-weight: normal;
+    width: 54%;
+    margin-bottom: 2rem;
+    margin-top: 0;
+    z-index: 1;
+  }
+}
+.solutionIntro {
+  width: 85%;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.supplySolution {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    width: 70%;
+    height: 70%;
+  }
+}
+.supplySolutionLink {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 3rem;
+  a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #444;
+    border-bottom: 2px solid gray;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+.supplySolutionText {
+  h1 {
+    color: var(--secondary-color);
+    font-size: 20px;
+    font-weight: normal;
+    width: 400px;
+  }
+  p {
+    width: 500px;
+    line-height: 1.5rem;
+    font-size: normal;
+  }
+}
+.solutionlinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  img {
+    width: 20%;
+  }
+}
+.supplySolutionTextImg {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Risk Categories section */
+.RiskCategories {
+  display: flex;
+}
+.RiskCategoriesIntro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  background-color: rgb(228, 220, 238);
+}
+.RiskCategoriesIntroText {
+  h1 {
+    font-size: 40px;
+    font-weight: normal;
+    width: 560px;
+  }
+}
+.RiskCategoriesIntroBoxContainer {
+  display: grid;
+  grid-template-columns: 220px 220px;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.RiskCategoriesIntroBox {
+  border: 1px solid rgb(103, 7, 215);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-radius: 10px;
+  h1 {
+    width: 250px;
+    font-size: 18px;
+    font-weight: normal;
+    color: var(--primary-color);
+  }
+  img {
+    width: 20%;
+  }
+}
+.RiskCategoriesImg {
+  background: url("/public/image/risk-factor.jpg");
+  width: 50%;
+  height: 150vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.customerModule {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+  align-items: center;
+  flex-direction: column;
+}
+.customerSpotlightContainer {
+  background-color: var(--primary-color);
+  color: #fff;
+  width: 85%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.customerIntro {
+  width: 50%;
+  padding: 3rem;
+  h1 {
+    font-weight: normal;
+  }
+  p {
+    width: 500px;
+    font-size: 18px;
+  }
+}
+.custmerImg {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 50%;
+    height: 20%;
+  }
+}
+.contactbtn {
+  background-image: var(--complex-gradient);
+  color: #fff;
+  border-radius: 20px;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+.contactSection {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contactFormText {
+  width: clamp(300px, 50%, 800px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 6rem;
+  h1 {
+    color: var(--secondary-color);
+  }
+  p {
+    width: clamp(600px, 50%, 1200px);
+    font-size: clamp(1rem, 1.5vw, 2rem);
+  }
+}
+.learnMoreContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 7%;
+}
+.LearningMore {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+.article {
+  width: 27.5%;
+  height: 15em;
+  padding: 2rem;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border-radius: 20px;
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 200;
+    width: 300px;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.section {
+  display: flex;
+  background-color: #f5faff;
+  height: 70vh;
+  width: 100%;
+}
+.contentContainer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.textContainer {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0 20px;
+  z-index: 1;
+}
+.title {
+  font-size: 45px;
+  color: var(--primary-color);
+  line-height: 1.5;
+}
+.imageContainer {
+  background: url("/public/image/about-landing-page1.jpg");
+  width: 50%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+.imageContainer:after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  display: block;
+  height: 100%;
+  transform: skew(-10deg) translateX(-300px);
+  transform-origin: bottom left;
+  width: 300px;
+  top: -1px;
+}
+.globalOrganizationContainer {
+  background-image: var(--complex-gradient);
+  width: 100%;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.globalOrganizationTextContent {
+  width: 85%;
+  font-size: 20px;
+  color: #fff;
+}
+.highlight {
+  color: #444;
+}
+.ceoSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7rem;
+  /* padding-bottom: 7rem;  */
+}
+.ceoContainer {
+  width: 85%;
+  display: flex;
+}
+.ceoImage {
+  background: url("/public/image/about-ceo.jpg");
+  width: 50%;
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+}
+.ceoTextContnet {
+  width: 50%;
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  background: var(--complex-gradient);
+  color: #fff;
+  p {
+    width: 500px;
+  }
+}
+.leadershipSection {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+.leadershipTeams {
+  display: grid;
+  width: 85%;
+  grid-template-columns: 300px 300px 300px 300px;
+  gap: 15px;
+  padding: 10px;
+}
+.team {
+  /* background-color: white; */
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.employee__Name-position {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.team img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.globalhealth {
+  width: 100%;
+}
+.locationSection {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+.locationContainer {
+  display: flex;
+  width: 85%;
+  gap: 25px;
+}
+.locationTitle {
+  margin-bottom: 20px;
+}
+.locationContent {
+  border: none;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.location p {
+  width: 300px;
+}
+.locationContent img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.companypage {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+}
+.companypageIntro {
+  width: clamp(200px, 50%, 100%);
+  padding-top: 12rem;
+  padding-left: 7rem;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  h1 {
+    font-size: clamp(16px, 2vw, 40px);
+    font-weight: 400;
+    width: clamp(200px, 630px, 100%);
+    margin-bottom: 2rem;
+    margin-top: 0;
+    z-index: 1;
+  }
+  h2 {
+    color: var(--primary-color);
+    font-size: normal;
+    font-weight: normal;
+    margin: 0;
+  }
+}
+.companyImgCover {
+  background: url("/public/image/company-landingpage.jpg");
+  width: clamp(200px, 50%, 100%);
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 0;
+}
+
+.companyImgCover:after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  display: block;
+  height: 100%;
+  transform: skew(-10deg) translateX(-300px);
+  transform-origin: bottom left;
+  width: 300px;
+  top: -1px;
+}
+
+.valuesLeadSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+.valuesLead {
+  width: clamp(200px, 85%, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  p {
+    width: clamp(200px, 70%, 100%);
+    font-size: clamp(16px, 1.3vw, 40px);
+  }
+}
+.EmployeeSpotlightSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.EmployeeSpotlightContainer {
+  width: 85%;
+  display: flex;
+  padding-bottom: 7%;
+}
+.EmployeeSpotlightImage {
+  background: url("/public/image/about-employees10.jpg");
+  width: 50%;
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+.EmployeeSpotlightText {
+  width: 50%;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--complex-gradient);
+  color: #fff;
+  h1 {
+    font-size: 30px;
+    font-weight: normal;
+    padding-bottom: 20px;
+  }
+  p {
+    width: 500px;
+    font-size: 18px;
+  }
+}
+
+.lifeAtGlobalHealthcare {
+  padding-left: 3rem;
+  padding-top: 3rem;
+  width: 60%;
+  z-index: 1;
+  h1 {
+    font-size: clamp(16px, 30px, 40px);
+    font-weight: normal;
+    width: 550px;
+    margin-bottom: 2rem;
+    margin-top: 0;
+    z-index: 1;
+  }
+  p {
+    width: 500px;
+  }
+}
+.employeesBenefit {
+  width: clamp(200px, 100%, 100%);
+  background: var(--complex-gradient);
+  padding-left: 7rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #fff;
+}
+.benefitListContainer {
+  width: 100%;
+}
+.benefitList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.benefitList li {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-weight: bold;
+}
+
+.EmployeePerspectiveSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.EmployeePerspectiveContainer {
+  width: 85%;
+  display: flex;
+  padding-bottom: 7%;
+  padding-top: 7%;
+}
+.EmployeePerspectiveImage {
+  background: url("/public/image/employees-perspective.jpg");
+  width: 50%;
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+.EmployeePerspectiveText {
+  width: 50%;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  background: var(--complex-gradient);
+  color: #fff;
+  h1 {
+    font-size: 30px;
+    font-weight: normal;
+    padding-bottom: 20px;
+  }
+  p {
+    width: 500px;
+    font-size: 18px;
+  }
+}
+/* Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+/* Video Container */
+.video-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Overlay Text */
+.video-overlay-text {
+  position: absolute;
+  top: 0;
+  left: 24rem;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 18px;
+  padding: 20px;
+  font-weight: bold;
+  z-index: 1;
+}
+.video-close-btn {
+  position: absolute;
+  top: 5px;
+  right: 25rem;
+  color: #444;
+  border: 1px solid #444;
+  font-size: 18px;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+footer .footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer .footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+footer h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: var(--secondary-color);
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: var(--secondary-color);
+}
+
+footer .social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+footer .subscription-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+footer .subscription-form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+footer .subscription-form button:hover {
+  background-color: #fff;
+  color: #222;
+}
+
+footer .footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  color: #aaa;
+}
+@media (max-width: 1200px) {
+  .navbar-container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .brand h1 {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    gap: 2rem;
+  }
+  .contactbtn {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .landingPageIntro {
+    width: 50%;
+    padding-top: 12rem;
+    padding-left: 5rem;
+    h1 {
+      font-size: 1.5rem;
+      font-weight: normal;
+      width: 350px;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+  .btn-lg {
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 16px;
+    gap: 30px;
+  }
+  .imgCover {
+    height: 80vh;
+  }
+  .vision {
+    height: 80vh;
+  }
+  .visionContent {
+    margin-top: 8rem;
+    h1 {
+      font-size: 30px;
+      font-weight: 400;
+      width: 400px;
+    }
+  }
+  .empty {
+    width: 40%;
+  }
+  .vision:after {
+    height: 80vh;
+  }
+
+  .AnalyticalSuperpowersIntro {
+    width: 50%;
+    padding-top: 11rem;
+    padding-left: 5rem;
+    h1 {
+      font-size: 30px;
+      font-weight: 400;
+      width: 350px;
+    }
+  }
+  .AnalyticalSuperpowersModule {
+    width: 60%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .moderntechnologyintro {
+    width: 50%;
+    padding-top: 11rem;
+    padding-left: 5rem;
+    h1 {
+      font-size: 30px;
+      width: 350px;
+    }
+  }
+  .moderntechnologyimage {
+    height: 80vh;
+  }
+  .supplychainimage {
+    height: 80vh;
+  }
+  .supplychainintro h1 {
+    font-size: 30px;
+    width: 350px;
+  }
+  .decision {
+    height: 80vh;
+  }
+
+  .decisionIntro {
+    padding-top: 9rem;
+    padding-left: 5rem;
+    h1 {
+      font-size: 30px;
+      width: 350px;
+    }
+  }
+  .btn-n {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .riskAssessment {
+    display: flex;
+  }
+  .supplyRiskAssessment {
+    padding-left: 3rem;
+    padding-top: 2rem;
+    h1 {
+      font-size: 30px;
+      width: 350px;
+      margin-bottom: 1rem;
+    }
+    p {
+      width: 350px;
+    }
+  }
+  .solutionContainer {
+    padding-bottom: 3rem;
+  }
+  .solutions {
+    margin-top: 5rem;
+    h1 {
+      font-size: 30px;
+      width: 45%;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  }
+  .supplySolutionLink {
+    margin-bottom: 2rem;
+    a {
+      font-size: 90%;
+      margin-left: 2px;
+      margin-right: 2px;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+  .supplySolutionText {
+    h1 {
+      font-size: 18px;
+    }
+    p {
+      width: 400px;
+    }
+  }
+  .solutionlinks {
+    gap: 8px;
+    img {
+      width: 16%;
+    }
+  }
+  .RiskCategoriesIntroText h1 {
+    font-size: 30px;
+    width: 350px;
+  }
+  .RiskCategoriesIntroBoxContainer {
+    grid-template-columns: 200px 200px;
+  }
+  .RiskCategoriesIntroBox {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    h1 {
+      width: 200px;
+      font-size: 16px;
+    }
+    img {
+      width: 16%;
+    }
+  }
+  .RiskCategoriesImg {
+    height: 100vh;
+  }
+  .customerModule {
+    gap: 1.2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .customerIntro {
+    width: 50%;
+    padding: 2rem;
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      width: 450px;
+      font-size: 16px;
+    }
+  }
+  .custmerImg {
+    img {
+      width: 40%;
+    }
+  }
+  .contactFormText p {
+    width: 350px;
+  }
+  .article {
+    padding: 2rem;
+    h1 {
+      font-size: 20px;
+    }
+    h2 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 100;
+      width: 200px;
+      margin-bottom: 1.5rem;
+    }
+  }
+  .title {
+    font-size: 30px;
+  }
+
+  .globalOrganizationContainer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .globalOrganizationTextContent {
+    width: 87%;
+  }
+  .ceoSection {
+    padding-top: 5rem;
+  }
+  .ceoTextContnet {
+    text-align: center;
+    font-size: 16px;
+    p {
+      width: 450px;
+    }
+  }
+  .leadershipSection {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .leadershipTeams {
+    grid-template-columns: 250px 250px 250px;
+    gap: 15px;
+    justify-content: center;
+  }
+  .employee__Name-position {
+    font-size: 12px;
+  }
+  .team img {
+    width: 200px;
+    height: 200px;
+  }
+  .locationContent img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .companypageIntro {
+    padding-top: 10rem;
+    padding-left: 5rem;
+  }
+  .companyImgCover {
+    height: 70vh;
+  }
+  .EmployeeSpotlightText {
+    text-align: center;
+    h1 {
+      font-size: 20px;
+      padding-bottom: 20px;
+    }
+    p {
+      width: 300px;
+      font-size: 14px;
+    }
+  }
+
+  .lifeAtGlobalHealthcare {
+    h1 {
+      font-size: 18px;
+      width: 350px;
+      font-weight: bold;
+    }
+    p {
+      width: 400px;
+    }
+  }
+  .employeesBenefit {
+    padding-top: 3rem;
+  }
+
+  .EmployeePerspectiveContainer {
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+
+  .EmployeePerspectiveText {
+    text-align: center;
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      width: 350px;
+    }
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #444;
+    color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .nav-links li a {
+    color: #fff;
+  }
+  .nav-links li a:hover {
+    text-decoration: underline;
+    color: #fff;
+  }
+  .nav-links button {
+    padding: 10px;
+    font-size: 12px;
+    background-image: none;
+    color: white;
+  }
+  .contactbtn {
+    padding: 10px;
+    font-size: 12px;
+    background-image: none;
+    color: white;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+  .navbar-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    max-width: auto;
+    width: 100%;
+    opacity: 0.9;
+  }
+  .brand {
+    h1 {
+      font-size: 18px;
+    }
+    img {
+      display: none;
+    }
+  }
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .landingPage {
+    width: 100%;
+    height: auto;
+    max-width: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .landingPageIntro {
+    width: 100%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    display: flex;
+    padding-left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h1 {
+      font-size: 16px;
+      font-weight: normal;
+      width: 300px;
+      margin-bottom: 15px;
+      margin-top: 15px;
+    }
+    h2 {
+      font-size: normal;
+      font-weight: normal;
+      width: 300px;
+    }
+  }
+
+  .btn-lg {
+    padding: 5px;
+    display: flex;
+    border-radius: 35px;
+    color: #444;
+    background-image: none;
+    background-color: #444;
+    color: #fff;
+    font-size: 12px;
+    gap: 5px;
+  }
+
+  .imgCover {
+    display: none;
+  }
+
+  .vision {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .visionContent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    h1 {
+      font-size: 16px;
+      font-weight: normal;
+      width: 350px;
+      text-align: center;
+    }
+    h2 {
+      font-size: normal;
+      font-weight: normal;
+    }
+  }
+  .vision:after {
+    height: 100%;
+  }
+  .empty {
+    display: none;
+  }
+
+  .AnalyticalSuperpowers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .AnalyticalSuperpowers:after {
+    height: 100%;
+  }
+  .AnalyticalSuperpowersIntro {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 7%;
+    padding-top: 7%;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h1 {
+      font-size: 16px;
+      font-weight: 500;
+      width: 300px;
+      margin-bottom: 5px;
+      margin-bottom: 15px;
+      margin-top: 15px;
+    }
+    h2 {
+      font-size: normal;
+      font-weight: normal;
+    }
+  }
+  .AnalyticalContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .AnalyticalSuperpowersModule {
+    width: 100%;
+    height: 200px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    img {
+      height: auto;
+    }
+  }
+
+  .moderntechnology {
+    display: block;
+  }
+  .moderntechnologyintro {
+    width: 100%;
+    padding-top: 7%;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    h1 {
+      font-size: 16px;
+      font-weight: 500;
+      width: 300px;
+    }
+    h2 {
+      font-size: normal;
+      font-weight: normal;
+    }
+  }
+  .moderntechnologyimage {
+    display: none;
+  }
+
+  .supplychain {
+    display: block;
+  }
+  .supplychainimage {
+    display: none;
+  }
+  .supplychainintro {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+
+  .decision {
+    display: block;
+    height: auto;
+  }
+
+  .decisionIntro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    padding-left: 0;
+    h1 {
+      font-size: 16px;
+      font-weight: 500;
+      width: 300px;
+      margin-bottom: 2rem;
+    }
+  }
+  .btn-n {
+    padding: 5px;
+    display: flex;
+    border-radius: 35px;
+    color: #444;
+    background-image: none;
+    background-color: #444;
+    color: #fff;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .decisionImagewraper {
+    display: none;
+  }
+  .riskAssessment {
+    display: block;
+  }
+  .supplyRiskAssessment {
+    padding-left: 0;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    h1 {
+      font-size: 18px;
+      font-weight: normal;
+      width: 300px;
+    }
+    p {
+      width: 360px;
+    }
+  }
+  .riskAssessmentImageContainer {
+    display: none;
+  }
+  .riskAssessmentImageContainer:before {
+    display: none;
+  }
+  .riskAssessmentImage-1 {
+    display: none;
+  }
+
+  .riskAssessmentImage-2 {
+    display: none;
+  }
+
+  .solutionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7%;
+  }
+  .solutions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+    text-align: center;
+    h1 {
+      font-size: 18px;
+      font-weight: normal;
+      width: 300px;
+      margin-bottom: 7%;
+    }
+  }
+  .solutionIntro {
+    width: 90%;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .supplySolution {
+    width: 100%;
+    display: block;
+    img {
+      display: none;
+    }
+  }
+  .supplySolutionLink {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 7%;
+    a {
+      text-decoration: none;
+      font-size: 16px;
+      margin-left: 0;
+      margin-right: 0;
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+  }
+  .supplySolutionText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    h1 {
+      font-size: 16px;
+      font-weight: normal;
+      width: 300px;
+    }
+    p {
+      width: 270px;
+      line-height: normal;
+      font-size: normal;
+    }
+  }
+  .solutionlinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    img {
+      display: none;
+    }
+  }
+  .supplySolutionTextImg {
+    display: none;
+  }
+
+  .RiskCategories {
+    display: block;
+  }
+  .RiskCategoriesIntro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+  }
+  .RiskCategoriesIntroText {
+    h1 {
+      font-size: 18px;
+      font-weight: normal;
+      width: 350px;
+    }
+  }
+  .RiskCategoriesIntroBoxContainer {
+    grid-template-columns: 160px 160px;
+    gap: 15px;
+  }
+  .RiskCategoriesIntroBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    h1 {
+      width: normal;
+      font-size: 12px;
+      font-weight: normal;
+      width: 200px;
+    }
+    img {
+      width: 20%;
+    }
+  }
+  .RiskCategoriesImg {
+    display: none;
+  }
+
+  .customerModule {
+    gap: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .customerSpotlightContainer {
+    width: 100%;
+    border-radius: 0;
+    display: block;
+    padding-top: 0;
+    padding-bottom: 15px;
+  }
+  .customerIntro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+    h1 {
+      font-size: 18px;
+      font-weight: normal;
+    }
+    p {
+      width: 375px;
+      font-size: 16px;
+    }
+  }
+  .custmerImg {
+    width: 100%;
+    img {
+      width: 20%;
+      height: auto;
+    }
+  }
+
+  .learnMoreContainer {
+    padding-right: 0;
+    width: 100%;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .LearningMore {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    padding: 15px;
+  }
+  .article {
+    width: 95%;
+    height: auto;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      font-size: 18px;
+    }
+
+    h1 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 200;
+      width: 350px;
+      margin-bottom: 15px;
+    }
+  }
+  .companypage {
+    flex-direction: column;
+  }
+  .companypageIntro {
+    width: 100%;
+    padding-top: 5%;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    h1 {
+      width: 350px;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 18px;
+      padding-bottom: 4px;
+    }
+  }
+  .companyImgCover {
+    display: none;
+  }
+  .valuesLeadSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7%;
+    padding-bottom: 7%;
+  }
+  .valuesLead {
+    width: 100%;
+    p {
+      width: 350px;
+    }
+    h1 {
+      font-size: 18px;
+    }
+  }
+
+  .lifeAtGlobalHealthcare {
+    padding-left: 0;
+    padding-top: 1rem;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    h1 {
+      width: 100%;
+      margin-bottom: 5px;
+      margin-top: 0;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    p {
+      width: 370px;
+      font-size: 12px;
+    }
+  }
+
+  .employeesBenefit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    h1 {
+      font-size: 12px;
+    }
+  }
+  .benefitListContainer {
+    width: 100%;
+  }
+  .benefitList li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    font-size: 10px;
+  }
+
+  .EmployeePerspectiveSection {
+    flex-direction: column;
+  }
+  .EmployeePerspectiveContainer {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+  .EmployeePerspectiveImage {
+    width: 100%;
+    height: 40vh;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .EmployeePerspectiveText {
+    width: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    h1 {
+      font-size: 16px;
+      padding-bottom: 2px;
+      padding-top: 7px;
+    }
+    p {
+      width: 350px;
+      text-align: center;
+      font-size: 12px;
+    }
+  }
+
+  .EmployeeSpotlightSection {
+    flex-direction: column;
+  }
+  .EmployeeSpotlightContainer {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+  }
+  .EmployeeSpotlightImage {
+    width: 90%;
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .EmployeeSpotlightText {
+    width: 90%;
+    height: 40vh;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    h1 {
+      font-size: 16px;
+      font-weight: normal;
+      padding-bottom: 0;
+    }
+    p {
+      width: 300px;
+      font-size: 12px;
+      text-align: center;
+    }
+  }
+  .locationTitle h1 {
+    font-size: 18px;
+    margin: 0;
+  }
+  .locationSection {
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+  .locationContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    gap: 0;
+  }
+
+  .location p {
+    width: 350px;
+  }
+  .locationContent img {
+    display: none;
+  }
+  .section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+  }
+  .contentContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .textContainer {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    button {
+      font-size: 8px;
+      padding: 4px;
+    }
+  }
+  .title {
+    font-size: 16px;
+    width: 350px;
+    text-align: center;
+  }
+  .imageContainer {
+    display: none;
+  }
+  .globalOrganizationContainer {
+    padding-top: 7%;
+    padding-bottom: 7%;
+  }
+  .globalOrganizationTextContent {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    p {
+      font-size: 12px;
+      width: 350px;
+    }
+  }
+  .ceoSection {
+    flex-direction: column;
+    padding-top: 7%;
+    padding-bottom: 7%;
+  }
+  .ceoContainer {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ceoImage {
+    width: 90%;
+    height: 40vh;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .ceoTextContnet {
+    width: 90%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    flex-direction: column;
+    font-size: 12px;
+    padding-top: 10px;
+    text-align: center;
+    p {
+      width: 320px;
+    }
+  }
+  .leadershipSection {
+    padding-top: 0;
+    padding-bottom: 2%;
+  }
+  .leadershipTitle h1 {
+    font-size: 18px;
+    margin: 0;
+    padding: 10px;
+  }
+  .leadershipTeams {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .employee__Name-position {
+    font-size: 12px;
+    p {
+      width: 100px;
+    }
+  }
+  .team img {
+    width: 100px;
+    height: 100px;
+  }
+  .globalhealth {
+    width: 100%;
+  }
+
+  .riskAssessment {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .supplyRiskAssessment {
+    padding-left: 0;
+    padding-top: 0;
+    width: 100%;
+    h1 {
+      font-size: 18px;
+      text-align: center;
+      width: 350px;
+      margin-bottom: 10px;
+    }
+    p {
+      width: 360px;
+    }
+  }
+  .riskAssessmentImageContainer {
+    display: none;
+  }
+  .riskAssessmentImageContainer:before {
+    display: none;
+  }
+  .riskAssessmentImage-1 {
+    display: none;
+  }
+
+  .riskAssessmentImage-2 {
+    display: none;
+  }
+
+  .contactSection {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactFormText {
+    width: 100%;
+    padding-top: 4%;
+    h1 {
+      font-size: 18px;
+    }
+    p {
+      width: 350px;
+      font-size: 16px;
+    }
+  }
+}
